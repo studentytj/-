@@ -20,9 +20,9 @@
 用在`inline`      `table-cell`元素  
 4. 图片`img`居中方法  
    ```css
-   img{
-      display:block;  
-      margin:0 auto;
+   img{  
+      display:block;    
+      margin:0 auto;  
    }
    ```
 5. 如何使用`div`居中方法  
