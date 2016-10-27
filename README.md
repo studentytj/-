@@ -12,24 +12,24 @@
 >>总要吃些苦头，才能尝尽甜头
 
 ##自学过程中遇到的问题
-* 如何在*元素*前面添加一张**图片**？  
+1. 如何在*元素*前面添加一张**图片**？  
 利用`content：url(imageurl)`即可添加  
 
 !!! hint "待解决"  
         如何控制加入图片的垂直居中！
 
-* `text-align`  
-`text-align`主要用来定义行内内容（例如文字）如何相对它的块父元素对齐，并不控制块元素本身的对齐  
-* `vertical-align`  
+2. `text-align`  
+  `text-align`主要用来定义行内内容（例如文字）如何相对它的块父元素对齐，并不控制块元素本身的对齐  
+3. `vertical-align`  
 用在`inline`      `table-cell`元素  
-* 图片`img`居中方法  
+4. 图片`img`居中方法  
 ```css
 img{
     display:block;  
     margin:0 auto;
 }
 ```
-5.如何使用div居中方法  
+5. 如何使用div居中方法  
   参考**segmentfault**中的回答：  
   [div中的内容垂直居中的五种方法](https://segmentfault.com/a/1190000003745881)
 ----------------------------------------
