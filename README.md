@@ -12,17 +12,17 @@
 >>总要吃些苦头，才能尝尽甜头
 
 ##自学过程中遇到的问题
-1.如何在*元素*前面添加一张**图片**？  
+* 如何在*元素*前面添加一张**图片**？  
 利用`content：url(imageurl)`即可添加  
 
 !!! hint "待解决"  
         如何控制加入图片的垂直居中！
 
-2.`text-align`  
-`text-align`主要用来定义行内内容（例如文字）如何相对它的块父元素对齐，并不控制块元素本身的对齐
-3.`vertical-align`  
+* `text-align`  
+`text-align`主要用来定义行内内容（例如文字）如何相对它的块父元素对齐，并不控制块元素本身的对齐  
+* `vertical-align`  
 用在`inline`      `table-cell`元素  
-4.图片`img`居中方法  
+* 图片`img`居中方法  
 ```css
 img{
     display:block;  
