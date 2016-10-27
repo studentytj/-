@@ -19,12 +19,12 @@
 3. `vertical-align`  
 用在`inline`      `table-cell`元素  
 4. 图片`img`居中方法  
-   ```css
+```css
    img{  
       display:block;    
       margin:0 auto;  
    }
-   ```
+```
 5. 如何使用`div`居中方法  
 参考**segmentfault**中的回答：  
 [div中的内容垂直居中的五种方法](https://segmentfault.com/a/1190000003745881)  
