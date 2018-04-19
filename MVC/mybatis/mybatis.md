@@ -4,7 +4,7 @@ CustomerMapper接口中定义批量插入的方法
 void  batchInsertCustomer(List<Customer> customers);
 ```
 CustomerMapper.xml中写上对应的sql语句
-```java
+```
 <insert id="batchInsertCustomer" parameterType="java.util.List">
         <selectKey resultType="int" keyProperty="id" order="AFTER">
             SELECT 
@@ -15,7 +15,7 @@ CustomerMapper.xml中写上对应的sql语句
         (#{item.name},#{item.age},#{item.gender},#{item.tel},#{item.email},#{item.qq},#{item.wechat},#{item.seller.id},#{item.inputUser.id},#{item.inputTime},#{item.state})
         </foreach>
     </insert>
-    ```
+```
 
 这里需要注意几点：
 1. insert的id必须和mapper接口中定义的方法一致，这样才能找到正确的sql语句
@@ -40,11 +40,13 @@ CustomerMapper.xml中写上对应的sql语句
 1. 查询数据的时候where里面如果有"<"的时候，执行起来会出错，本质原因是*mapper.xml实质上还是xml，所以解析器会把该字符解释为新元素的开始
 如何解决呢？
 使用实体引用：
-|-----|-----:|:----:|
+
+|---|---:|:---:|
 |&lt;  |<   |小于|
 |&gt;    |>   |大于|
 |&amp;   |&   |和号|
 |&apos;  |'   |省略号|
 |&quot;  |"   |引号|
+
 使用CDATA：
 例如：```<![CDATA[<]]>```
